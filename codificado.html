@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="codificador.js" defer></script>
+    <link rel="shortcut icon" href="Aha-Soft-Universal-Shop-Coin.ico">
+    <link rel="stylesheet" href="codificador.css">
+
+    <title>Cod/Decod</title>
+</head>
+
+<body>
+
+    <h1>Codificador De Mensagem</h1>
+
+    <div class="areaDeTexto">
+        <textarea id="textoASerCodificado" placeholder="Insira sua mensagem aqui..."></textarea>
+    </div>
+
+    <div id="radius">
+        <input type="radio" name="codigo" id="cesar" value="cicesar">
+        <label>Cifra de César</label>
+
+        <input type="radio" name="codigo" id="base64" value="b64">
+        <label>Base64</label>
+
+    </div>
+
+    <div id="deslocamento" style="display: none">
+        <label class="deslocamento">Quantas letras deseja deslocar?</label>
+        <input type="range" id="deslocar" min="3" max="25" value="3"
+            oninput="this.nextElementSibling.value = this.value">
+        <output>3</output>
+    </div>
+
+    <div class="areaDeTexto">
+        <textarea id="textoASerRetornado"></textarea>
+    </div>
+
+    <button type="button" id="cod" style="font-size:12pt">Codificar</button>
+    <button type="button" id="decod" style="font-size:12pt">Decodificar</button>
+</body>
+
+</html>

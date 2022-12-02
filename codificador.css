@@ -1,0 +1,37 @@
+* {
+    align-items: center;
+    font-family: 'Libre Baskerville', monospace;
+}
+
+body {
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+}
+
+h1 {
+    padding: 10% 0 0 1%;
+    color: rgb(25, 25, 27);
+}
+
+#textoASerCodificado,
+#textoASerRetornado {
+    margin-top: 30px;
+    padding: 10px 150px;
+    border-radius: 10px;
+}
+
+#radius,
+#deslocamento {
+    color: rgb(9, 10, 9);
+
+}
+
+#cod,
+#decod {
+    color: rgb(249, 246, 246);
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(15, 15, 15);
+    cursor: pointer;
+}
